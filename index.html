@@ -4,6 +4,7 @@
     <title>thegioididong</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -31,7 +32,7 @@
     <head>
 
       <!-- banner -->
-      <section class="flex center-xy px-40 bg-[#ffd500]">
+      <section class="flex center-xy px-40 bg-tgdd">
         <div class="block relative">
           <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/big-1200-44-1200x44.png" alt="">
           <div class="absolute left-0 top-[50%] -translate-y-1/2">
@@ -48,22 +49,248 @@
       </section>
 
       <!-- search -->
-      <section class="flex px-40 bg-[#ffd500]">
+      <section class="flex px-40 bg-tgdd">
 
         <!-- logo -->
         <div id="logo">
           <a href="#"></a>
         </div>
 
-        <div class="flex">
-          <div class="block border p">
-            <small class="block">Xem giá, tồn kho tại:</small>
-            <small class="block">Hồ Chí Minh</small>
+        <!-- store -->
+        <div class="flex mx-2 my-2 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="block text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Xem giá, tồn kho tại:</small>
+              <small class="block">Hồ Chí Minh</small>
+            </a>
           </div>
+          <div class="flex self-center translate-y-2/4 border-[6px] border-solid border-[rgba(255,172,10,.6)] h-0 border-t-[6px] border-t-black"></div>
+        </div>
+
+        <!-- search -->
+        <div class="flex self-center relative ml-3 mr-3">
+          <input type="search" placeholder="Ban tim gi..." class="rounded-sm w-56 p-1">
+          <div class="flex self-center absolute right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- account -->
+        <div class="flex mx-2 my-2 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="block text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Tài khoản &</small>
+              <small class="block">Đơn hàng</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- storage baskets -->
+        <div class="flex px-3 mx-2 my-2 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="felx self-center">
+            <img width="24" src="images/cart-outline.svg" alt="">
+          </div>
+          <div class="flex self-center text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Giỏ hàng</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- more -->
+        <div class="flex text-xs p-1 whitespace-nowrap center-xy">
+          <div class="p-1">24h công nghệ</div>
+          <div class="border-r" style="height: 20px;"></div>
+          <div class="p-1">Hỏi đáp</div>
+          <div class="border-r" style="height: 20px;"></div>
+          <div class="p-1">Game app</div>
         </div>
       </section>
 
-      <section></section>
+      <!-- menu -->
+      <section class="bg-tgdd flex justify-between p-4 px-40">
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/cellphone.svg" alt="" height="14" width="14">
+            Điện thoại
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/laptop.svg" alt="" height="14" width="14">
+            Laptop
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/tablet-dashboard.svg" alt="" height="14" width="14">
+            Tablet
+          </div>
+        </a>
+
+       
+          <div class="accessory flex center-xy text-xs gap-2 relative">
+            <a href="#" class="flex center-xy gap-2 z-10">
+              <img src="images/headphones.svg" alt="" height="14" width="14">
+                Phụ kiện
+            </a>
+            <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+            
+            <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 left-0 max-w-full min-w-[600px] bg-gray-100 justify-around whitespace-normal z-0">
+              <div class="p-1 sub-table">
+                <h6 class="font-bold">Phụ kiện di dộng</h6>
+                <a href="#">Sạc dự phòng</a>
+                <a href="#">Sạc, cáp</a>
+                <a href="#">Ốp lưng điện thoại</a>
+                <a href="#">Ốp lưng máy tính bảng</a>
+                <a href="#">Miếng dán màn hình</a>
+                <a href="#">Gậy chụp ảnh, gimbal</a>
+                <a href="#">Giá đỡ điện thoại</a>
+                <a href="#">Đế, móc điện thoại</a>
+                <a href="#">Túi chống nước</a>
+                <a href="#">Túi đựng AirPods</a>
+                <a href="#">AirTag, Vỏ bảo vệ AirTag</a>
+                <a href="#">Phụ kiện Tablet</a>
+              </div>
+
+              <div class="p-1 sub-table">
+                <h6 class="font-bold">Phụ kiện laptop</h6>
+                <a href="#">Chuột, bàn phím</a>
+                <a href="#">Thiết bị mạng</a>
+                <a href="#">Balo, túi chống sốc</a>
+                <a href="#">Giá đỡ laptop</a>
+                <a href="#">Phần mềm</a>
+                <h6 class="font-bold">Thiết bị âm thanh</h6>
+                <a href="#">Tai nghe</a>
+                <a href="#">Loa</a>
+                <a href="#">Micro</a>
+              </div>
+
+              <div class="p-1 sub-table">
+                <h6 class="font-bold">Thiết bị nhà thông minh</h6>
+                <a href="#">Khóa điện tử</a>
+                <a href="#">Camera, webcam</a>
+                <a href="#">Máy chiếu</a>
+                <a href="#">TV Box</a>
+                <a href="#">Ổ cắm, bóng đèn thông minh</a>
+                <h6 class="font-bold">Thiết bị lưu trữ</h6>
+                <a href="#">Ổ cứng di động</a>
+                <a href="#">Thẻ nhớ</a>
+                <a href="#">USB</a>
+              </div>
+
+              <div class="p-1 sub-table">
+                <h6 class="font-bold">Thương hiệu hàng đầu</h6>
+                <a href="#">Apple</a>
+                <a href="#">Samsung</a>
+                <a href="#">Sony</a>
+                <a href="#">JBL</a>
+                <a href="#">Anker</a>
+                <h6 class="font-bold">Phụ kiện khác</h6>
+                <a href="#">Phụ kiện ô tô</a>
+                <a href="#">Máy tính cầm tay</a>
+                <a href="#">Quạt mini</a>
+                <a href="#">Pin tiểu</a>
+              </div>
+
+              <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[20px] top-0 translate-y-[-20px]"></div>
+            </div>
+          </div>
+        
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/watch-variant.svg" alt="" height="14" width="14">
+            Smartwatch
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/watch.svg" alt="" height="14" width="14">
+            Đồng hồ
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/cellphone.svg" alt="" height="14" width="14">
+            Máy cũ giá rẻ
+          </div>
+        </a>
+
+        <div class="accessory flex center-xy text-xs gap-2 relative">
+          <a href="#" class="flex center-xy gap-2 z-10">
+              <img src="images/monitor-multiple.svg" alt="" height="14" width="14">
+               PC, Máy in
+          </a>
+          <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+        
+          <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 left-0 max-w-full min-w-[120px] bg-gray-100 justify-around whitespace-normal z-0">
+            <div class="p-1 sub-table">
+            <a href="#">Máy in</a>
+            <a href="#">Mực in</a>
+            <a href="#">Màn hình máy tính</a>
+            <a href="#">Máy tính để bàn</a>
+            </div>
+            <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[20px] top-0 translate-y-[-20px]"></div>
+          </div>
+        </div>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            Sim, thẻ cào
+          </div>
+        </a>
+
+        <div class="accessory flex center-xy text-xs gap-2 relative">
+          <a href="#" class="z-10">
+            Dịch vụ, tiện ích
+          </a>
+          <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+        
+          <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 right-0 max-w-full min-w-[500px] bg-gray-100 justify-around whitespace-normal z-0">
+            <div class="p-1 sub-table">
+              <h6 class="font-bold">
+                Thanh toán hóa đơn
+              </h6>
+              <a href="#">Đóng tiền trả góp</a>
+              <a href="#">Đóng tiền điện</a>
+              <a href="#">Đóng tiền nước</a>
+              <a href="#">Đóng tiền NET FPT</a>
+              <a href="#">Đóng tiền net, cáp VNPT</a>
+              <a href="#">Mua gói truyền hình</a>
+              <a href="#">Vé tàu, xe, máy bay</a>
+              <a href="#">Viện phí ĐH Y DƯỢC TPHCM</a>
+            </div>
+
+            <div class="p-1 sub-table">
+              <h6 class="font-bold">
+                Tài chính - Bảo hiểm
+              </h6>
+              <a href="#">Mua bảo hiểm xe máy, ô tô</a>
+              <a href="#">Đóng tiền bảo hiểm</a>
+            </div>
+
+            <div class="p-1 sub-table">
+              <h6 class="font-bold">
+                Tiện ích viễn thông
+              </h6>
+              <a href="#">Mua gói data 3G, 4G</a>
+              <a href="#">Nạp tiền trả trước</a>
+              <a href="#">Nạp tiền trả sau</a>
+              <a href="#">Thẻ cào game</a>
+              <a href="#">Thẻ cào điện thoại</a>
+            </div>
+
+            <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[90%] top-0 translate-y-[-20px]"></div>
+          </div>
+        </div>
+      </section>
     </head>
 
     <main></main>
