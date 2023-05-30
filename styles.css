@@ -35,6 +35,12 @@
   opacity: 1;
   visibility: visible;
 }
-.translateY-hover:hover img {
-  transform: scaleY(12px);
+.transalteY-hover div>img {
+  transition: .2s, ease-in;
+}
+.translateY-hover:hover div>img {
+  transform: translateY(-12px);
+}
+.translateY-hover:hover > span {
+  color: blue;
 }
