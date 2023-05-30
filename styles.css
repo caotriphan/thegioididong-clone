@@ -12,3 +12,29 @@
   background-position-y:-160px ;
   background-color: rgb(255 213 0);
 }
+.bg-tgdd {
+  background: #ffd500;
+}
+.bg-tgdd-dark {
+  background: rgba(255, 172, 10, .6);
+}
+
+.sub-table a {
+  display: block;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  padding: 4px;
+}
+
+.sub-table h6 {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+}
+.accessory:hover .sub-more {
+  opacity: 1;
+  visibility: visible;
+}
+.translateY-hover:hover img {
+  transform: scaleY(12px);
+}
