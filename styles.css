@@ -12,6 +12,17 @@
   background-position-y:-135px ;
   background-color: rgb(255 213 0);
 }
+
+#logo-phone {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/iconnew.webp);
+  /* border: 1px solid rgb(255 213 0); */
+  padding: 18px 85px 18px 85px;
+  background-repeat: no-repeat;
+  background-size: 230px 200px;
+  background-position-y:-135px ;
+  background-color: rgb(255 213 0);
+}
+
 .bg-tgdd {
   background: #ffd500;
 }
