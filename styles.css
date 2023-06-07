@@ -70,7 +70,7 @@
   line-height: 30px;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-size: 235px 200px;
+  background-size: 243px 200px;
   background-position:0 -58px;
   background-color: #e1fecf;
   width: 80px;
@@ -83,9 +83,9 @@
   line-height: 30px;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-size: 243px 200px;
+  background-size: 245px 200px;
   background-position:-85px 0;
-  background-color: #e1fecf;
+  background-color: #fff;
   width: 80px;
   height: 24px;
 }
@@ -97,7 +97,67 @@
   background-repeat: no-repeat;
   background-size: 247px 200px;
   background-position:-170px 0;
-  background-color: #e1fecf;
+  background-color: #fff;
+  width: 80px;
+  height: 24px;
+}
+#logo-ankhang {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 247px 200px;
+  background-position:-85px -90px;
+  background-color: #fff;
+  width: 80px;
+  height: 24px;
+}
+#logo-avasport {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 247px 200px;
+  background-position:-85px -120px;
+  background-color: #fff;
+  width: 80px;
+  height: 24px;
+}
+#logo-tantam {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 247px 200px;
+  background-position:-170px -90px;
+  background-color: #fff;
+  width: 80px;
+  height: 24px;
+}
+#logo-farm {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 240px 200px;
+  background-position:0 -90px;
+  background-color: #fff;
+  width: 80px;
+  height: 24px;
+}
+#logo-vieclam {
+  background-image: url(https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 245px 200px;
+  background-position:0 -120px;
+  background-color: #fff;
   width: 80px;
   height: 24px;
 }
@@ -136,6 +196,6 @@
 .translateY-hover:hover > span, a {
   color: blue;
 }
-.change-color a:hover {
+.change-color-blue a:hover {
   color: blue;
 }
