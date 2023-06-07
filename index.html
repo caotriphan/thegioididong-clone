@@ -4,6 +4,7 @@
     <title>thegioididong</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.3.5/tailwind.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -26,12 +27,13 @@
     </style>
   </head>
   <body>
-
-    <!-- head body -->
-    <head>
+    <main class="bg-tgdd pb-1">
+    
+      <!-- head body -->
+      <div class="mb-24">
 
       <!-- banner -->
-      <section class="flex center-xy px-40 bg-[#ffd500]">
+      <section class="flex center-xy px-56 bg-tgdd">
         <div class="block relative">
           <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/big-1200-44-1200x44.png" alt="">
           <div class="absolute left-0 top-[50%] -translate-y-1/2">
@@ -48,26 +50,1831 @@
       </section>
 
       <!-- search -->
-      <section class="flex px-40 bg-[#ffd500]">
+      <section class="flex px-56 bg-tgdd">
 
         <!-- logo -->
         <div id="logo">
           <a href="#"></a>
         </div>
 
-        <div class="flex">
-          <div class="block border p">
-            <small class="block">Xem giá, tồn kho tại:</small>
-            <small class="block">Hồ Chí Minh</small>
+        <!-- store -->
+        <div class="flex mx-1 my-1 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="block text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Xem giá, tồn kho tại:</small>
+              <small class="block">Hồ Chí Minh</small>
+            </a>
+          </div>
+          <div class="flex self-center translate-y-2/4 border-[6px] border-solid border-[rgba(255,172,10,.6)] h-0 border-t-[6px] border-t-black"></div>
+        </div>
+
+        <!-- search -->
+        <div class="flex self-center relative ml-[10px] mr-[10px]">
+          <input type="search" placeholder="Ban tim gi..." class="rounded-sm w-56 p-1">
+          <div class="flex self-center absolute right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- account -->
+        <div class="flex mx-1 my-1 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="block text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Tài khoản &</small>
+              <small class="block">Đơn hàng</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- storage baskets -->
+        <div class="flex px-3 mx-1 my-1 bg-tgdd-dark rounded-md whitespace-nowrap">
+          <div class="felx self-center">
+            <img width="24" src="images/cart-outline.svg" alt="">
+          </div>
+          <div class="flex self-center text-xs px-2 rounded-md">
+            <a href="#">
+              <small class="block">Giỏ hàng</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- more -->
+        <div class="flex text-xs p-1 whitespace-nowrap center-xy">
+          <div class="p-1">24h công nghệ</div>
+          <div class="border-r" style="height: 20px;"></div>
+          <div class="p-1">Hỏi đáp</div>
+          <div class="border-r" style="height: 20px;"></div>
+          <div class="p-1">Game app</div>
+        </div>
+      </section>
+
+      <!-- menu -->
+      <section class="bg-tgdd flex justify-between p-4 px-56">
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/cellphone.svg" alt="" height="14" width="14">
+            Điện thoại
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/laptop.svg" alt="" height="14" width="14">
+            Laptop
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/tablet-dashboard.svg" alt="" height="14" width="14">
+            Tablet
+          </div>
+        </a>
+
+       
+          <div class="accessory flex center-xy text-xs gap-2 relative">
+            <a href="#" class="flex center-xy gap-2 z-20">
+              <img src="images/headphones.svg" alt="" height="14" width="14">
+                Phụ kiện
+            </a>
+            <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+            
+            <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 left-0 max-w-full min-w-[600px] bg-gray-100 justify-around whitespace-normal z-10">
+              <div class="p-1 sub-table change-color-blue">
+                <h6 class="font-bold">Phụ kiện di dộng</h6>
+                <a href="#">Sạc dự phòng</a>
+                <a href="#">Sạc, cáp</a>
+                <a href="#">Ốp lưng điện thoại</a>
+                <a href="#">Ốp lưng máy tính bảng</a>
+                <a href="#">Miếng dán màn hình</a>
+                <a href="#">Gậy chụp ảnh, gimbal</a>
+                <a href="#">Giá đỡ điện thoại</a>
+                <a href="#">Đế, móc điện thoại</a>
+                <a href="#">Túi chống nước</a>
+                <a href="#">Túi đựng AirPods</a>
+                <a href="#">AirTag, Vỏ bảo vệ AirTag</a>
+                <a href="#">Phụ kiện Tablet</a>
+              </div>
+
+              <div class="p-1 sub-table change-color-blue">
+                <h6 class="font-bold">Phụ kiện laptop</h6>
+                <a href="#">Chuột, bàn phím</a>
+                <a href="#">Thiết bị mạng</a>
+                <a href="#">Balo, túi chống sốc</a>
+                <a href="#">Giá đỡ laptop</a>
+                <a href="#">Phần mềm</a>
+                <h6 class="font-bold">Thiết bị âm thanh</h6>
+                <a href="#">Tai nghe</a>
+                <a href="#">Loa</a>
+                <a href="#">Micro</a>
+              </div>
+
+              <div class="p-1 sub-table change-color-blue">
+                <h6 class="font-bold">Thiết bị nhà thông minh</h6>
+                <a href="#">Khóa điện tử</a>
+                <a href="#">Camera, webcam</a>
+                <a href="#">Máy chiếu</a>
+                <a href="#">TV Box</a>
+                <a href="#">Ổ cắm, bóng đèn thông minh</a>
+                <h6 class="font-bold">Thiết bị lưu trữ</h6>
+                <a href="#">Ổ cứng di động</a>
+                <a href="#">Thẻ nhớ</a>
+                <a href="#">USB</a>
+              </div>
+
+              <div class="p-1 sub-table change-color-blue">
+                <h6 class="font-bold">Thương hiệu hàng đầu</h6>
+                <a href="#">Apple</a>
+                <a href="#">Samsung</a>
+                <a href="#">Sony</a>
+                <a href="#">JBL</a>
+                <a href="#">Anker</a>
+                <h6 class="font-bold">Phụ kiện khác</h6>
+                <a href="#">Phụ kiện ô tô</a>
+                <a href="#">Máy tính cầm tay</a>
+                <a href="#">Quạt mini</a>
+                <a href="#">Pin tiểu</a>
+              </div>
+
+              <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[20px] top-0 translate-y-[-20px]"></div>
+            </div>
+          </div>
+        
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/watch-variant.svg" alt="" height="14" width="14">
+            Smartwatch
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/watch.svg" alt="" height="14" width="14">
+            Đồng hồ
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            <img src="images/cellphone.svg" alt="" height="14" width="14">
+            Máy cũ giá rẻ
+          </div>
+        </a>
+
+        <div class="accessory flex center-xy text-xs gap-2 relative">
+          <a href="#" class="flex center-xy gap-2 z-20">
+              <img src="images/monitor-multiple.svg" alt="" height="14" width="14">
+               PC, Máy in
+          </a>
+          <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+        
+          <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 left-0 max-w-full min-w-[120px] bg-gray-100 justify-around whitespace-normal z-10">
+            <div class="p-1 sub-table change-color-blue">
+            <a href="#">Máy in</a>
+            <a href="#">Mực in</a>
+            <a href="#">Màn hình máy tính</a>
+            <a href="#">Máy tính để bàn</a>
+            </div>
+            <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[20px] top-0 translate-y-[-20px]"></div>
+          </div>
+        </div>
+
+        <a href="#">
+          <div class="flex center-xy text-xs gap-2">
+            Sim, thẻ cào
+          </div>
+        </a>
+
+        <div class="accessory flex center-xy text-xs gap-2 relative">
+          <a href="#" class="z-20">
+            Dịch vụ, tiện ích
+          </a>
+          <div class="flex self-center translate-y-2/4 border-4 border-solid border-[#ffd500] h-0 border-t-4 border-t-black"></div>
+        
+          <div class="sub-more opacity-0 invisible shadow border border-[rgba(243,244,246,var(--tw-bg-opacity))] rounded-md p-1 flex text-xs absolute top-full translate-y-2 right-0 max-w-full min-w-[500px] bg-gray-100 justify-around whitespace-normal z-10">
+            <div class="p-1 sub-table change-color-blue">
+              <h6 class="font-bold">
+                Thanh toán hóa đơn
+              </h6>
+              <a href="#">Đóng tiền trả góp</a>
+              <a href="#">Đóng tiền điện</a>
+              <a href="#">Đóng tiền nước</a>
+              <a href="#">Đóng tiền NET FPT</a>
+              <a href="#">Đóng tiền net, cáp VNPT</a>
+              <a href="#">Mua gói truyền hình</a>
+              <a href="#">Vé tàu, xe, máy bay</a>
+              <a href="#">Viện phí ĐH Y DƯỢC TPHCM</a>
+            </div>
+
+            <div class="p-1 sub-table change-color-blue">
+              <h6 class="font-bold">
+                Tài chính - Bảo hiểm
+              </h6>
+              <a href="#">Mua bảo hiểm xe máy, ô tô</a>
+              <a href="#">Đóng tiền bảo hiểm</a>
+            </div>
+
+            <div class="p-1 sub-table change-color-blue">
+              <h6 class="font-bold">
+                Tiện ích viễn thông
+              </h6>
+              <a href="#">Mua gói data 3G, 4G</a>
+              <a href="#">Nạp tiền trả trước</a>
+              <a href="#">Nạp tiền trả sau</a>
+              <a href="#">Thẻ cào game</a>
+              <a href="#">Thẻ cào điện thoại</a>
+            </div>
+
+            <div class="absolute border-[10px] border-b-[10px] border-b-[rgba(243,244,246,var(--tw-bg-opacity))] border-[#ffd500] border-solid h-0 left-[90%] top-0 translate-y-[-20px]"></div>
           </div>
         </div>
       </section>
 
-      <section></section>
-    </head>
+      <section class="relative">
+        <div class="z-0">
+          <img width="1920" height="920" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/des11212121-1920x450.jpg" alt="">
+        </div>
+        
+        <div class="absolute container flex gap-1 grid grid-cols-2 mx-auto -translate-x-1/2 -translate-y-1/2 left-[50%] top-full max-w-[70%]">
+          <div class="relative rounded-md">
+            <img class="rounded-md" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/A24-720-220-720x220.png" alt="">
+              <div class="absolute opacity-75 top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 border border-slate-200 rounded-[50%] bg-slate-200">
+                <button style="width: 30px;" type="button" class="rounded-[50%] aspect-square"><</button>
+              </div>
+          </div>
 
-    <main></main>
+          <div class="relative rounded-md">
+            <img class="rounded-md" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/720-220-720x220-67.png" alt="">
+            <div class="absolute opacity-75 top-1/2 right-0 translate-x-1/2 -translate-y-1/2 border border-slate-200 rounded-[50%] bg-slate-200">
+              <button style="width: 30px;" type="button" class="rounded-[50%] aspect-square">></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
 
-    <footer></footer>
+      <footer>
+        <main class="border-orange-300 mb-7">
+      <!-- option promo -->
+      <section class="container mx-auto max-w-[70%] flex gap-5">
+          <a href="#" class="flex center-xy border-none bg-white rounded-[10px] px-2 py-2 gap-2" style="width: calc(100%/4);">
+            <img height="50" width="50" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Group-483467--1--120x120-1.png" alt="">
+            <span>Redmi note 12 <br>series</span>
+          </a>
+          <a href="#" class="flex center-xy border-none bg-white rounded-[10px] px-2 py-2 gap-2" style="width: calc(100%/4);">
+            <img height="50" width="50" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Frame-3-120x120.png" alt="">
+            <span>Phụ kiện giảm giá <br>đến 50%</span>
+          </a>
+          <a href="#" class="flex center-xy border-none bg-white rounded-[10px] px-2 py-2 gap-2" style="width: calc(100%/4);">
+            <img height="50" width="50" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Icon-100x100-100x100-2.png" alt="">
+            <span>Laptop từ <br>9.490.000đ</span>
+          </a>
+          <a href="#" class="flex center-xy border-none bg-white rounded-[10px] px-2 py-2 gap-2" style="width: calc(100%/4);">
+            <img height="50" width="50" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/dien-thoai-120x120-7.png" alt="">
+            <span>Điện thoại<br>Giá quá rẻ</span>
+          </a>
+      </section>
+        </main>
+
+      <!-- banner topzone -->
+        <div class="mb-2">
+        <img class="container mx-auto max-w-[70%]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/1200x100-1200x100-5.png" alt="">
+        </div>
+
+      <!-- flashsale golden time -->
+        <section class="container mx-auto max-w-[70%] bg-red-400 border-none p-[20px] rounded-md mb-7">
+        <!-- time -->
+        <div class="flex mb-2">
+          <div class="flex">
+            <img style="width: 32px; height: 70px;" class="aspect-[32/70] mr-[10px]" src="https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/lightning-ic.png" alt="">
+            <div class="">
+              <h3 class="font-bold leading-none text-[26px] uppercase text-[#ffe818] mb-[5px]">Giờ vàng giá sốc</h3>
+              <div class="flex">
+                <div class="text-white">Kết thúc trong:</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="text-center flex-1 center-xy"> 
+            <span>Đang diễn ra</span>
+            
+            <Span class="text-xl block mb-1">10:00 - 22:00</Span>
+            
+            <div class="border-b-2 w-12 mx-auto"></div>
+          </div>
+        </div>
+
+        <!-- list product -->
+        <div class="relative">
+          <div class="grid grid-cols-6 gap-2">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <h3 class="text-red-600 text-lg text-center">3.990.000VND</h3>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-1 pb-2">
+              <div class="flex items-center" style="height: 200px; line-height: 200px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/262649/Realme-9i-xanh-thumb-600x600.jpg" alt="">
+              </div>
+              <span class="flex center-xy text-xs whitespace-nowrap -translate-y-4">realme 9i (6GB/128GB)</span>
+              <strong class="text-red-600 text-lg text-center">3.990.000VND</strong>    
+              <div class="flex center-xy gap-2 text-xs">
+                <small class="line-through">4.590.000VND</small>
+                <div class="border-none bg-red-100 rounded-md">-13%</div>
+              </div>
+              <nav class="flex border-none rounded-xl bg-yellow-500 text-xs whitespace-nowrap mt-1">
+                <img width="15" height="15" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/fs-iconfire.png" alt="">
+                <span class="flex-1 text-center self-center">còn 20/20 xuất</span>
+              </nav>          
+            </a>
+          </div>
+
+          <div class="absolute top-1/2 -translate-y-1/2 right-[-20px] flex center-xy z-20">
+            <button type="button" class="rounded-ml border bg-white opacity-50 w-9 h-12 aspect-square">></button>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 left-[-20px] flex center-xy z-20">
+            <button type="button" class="rounded-md border bg-white opacity-50 w-9 h-12 aspect-square"><</button>
+          </div>
+        </div>
+        </section>
+
+      <!-- promo has-banner -->
+        <section class="container mx-auto max-w-[70%] bg-[#ffd500] border-none rounded-xl mb-7">
+          <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/Tagline-TOP-DEAL-SOC-1200x120-4.png" alt="">
+        
+          <div class="grid grid-cols-5 gap-2 p-[20px] mb-[20px] relative">
+          
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-2 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+              </div>
+              <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+                <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+                <span class="text-white">GIÁ RẺ QUÁ</span>
+              </nav>
+              <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+              <div class="mb-2">
+                <strong class="text-red-600 gap-2">
+                  27.490.000₫
+                  <small class="rounded-lg bg-red-200 p-1">-8%</small>
+                </strong>
+              </div>
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+                <div>Giá rẻ quá: 26.490.000₫</div>
+              </nav>
+            </a>
+          
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-2 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+              </div>
+              <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+                <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+                <span class="text-white">GIÁ RẺ QUÁ</span>
+              </nav>
+              <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+              <div class="mb-2">
+                <strong class="text-red-600 gap-2">
+                  27.490.000₫
+                  <small class="rounded-lg bg-red-200 p-1">-8%</small>
+                </strong>
+              </div>
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+                <div>Giá rẻ quá: 26.490.000₫</div>
+              </nav>
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-2 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+              </div>
+              <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+                <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+                <span class="text-white">GIÁ RẺ QUÁ</span>
+              </nav>
+              <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+              <div class="mb-2">
+                <strong class="text-red-600 gap-2">
+                  27.490.000₫
+                  <small class="rounded-lg bg-red-200 p-1">-8%</small>
+                </strong>
+              </div>
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+                <div>Giá rẻ quá: 26.490.000₫</div>
+              </nav>
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-2 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+              </div>
+              <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+                <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+                <span class="text-white">GIÁ RẺ QUÁ</span>
+              </nav>
+              <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+              <div class="mb-2">
+                <strong class="text-red-600 gap-2">
+                  27.490.000₫
+                  <small class="rounded-lg bg-red-200 p-1">-8%</small>
+                </strong>
+              </div>
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+                <div>Giá rẻ quá: 26.490.000₫</div>
+              </nav>
+            </a>
+
+            <a href="#" class="translateY-hover inline-block bg-white rounded-lg overflow-hidden px-2 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+              </div>
+              <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+                <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+                <span class="text-white">GIÁ RẺ QUÁ</span>
+              </nav>
+              <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+              <div class="mb-2">
+                <strong class="text-red-600 gap-2">
+                  27.490.000₫
+                  <small class="rounded-lg bg-red-200 p-1">-8%</small>
+                </strong>
+              </div>
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+                <div>Giá rẻ quá: 26.490.000₫</div>
+              </nav>
+            </a>
+          
+            <div class="absolute top-1/2 -translate-y-1/2 right-0 flex center-xy z-20">
+              <button type="button" class="rounded-ml border bg-white opacity-50 w-9 h-12 aspect-square">></button>
+            </div>
+            <div class="absolute top-1/2 -translate-y-1/2 left-0 flex center-xy z-20">
+              <button type="button" class="rounded-md border bg-white opacity-50 w-9 h-12 aspect-square"><</button>
+            </div>
+          </div>
+            
+            <div>
+              <a href="#" class="border rounded-md bg-white mx-auto p-1 flex center-xy max-w-[300px] -translate-y-5">
+                <span>Xem tất cả ></span>
+              </a>
+            </div>
+        </section>
+
+      <!-- laptop gaming 7 days knockout -->
+        <section class="container mx-auto max-w-[70%] bg-[#920101] border-none rounded-xl mb-7">
+          <img class="block max-w-full" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/campaign/Group-232967-1200x120.png" alt="">
+      
+          <div class="grid grid-cols-5 gap-2 p-[20px] mb-[20px] relative">
+
+          <div class="absolute top-1/2 -translate-y-1/2 right-0 flex center-xy z-20">
+            <button type="button" class="rounded-ml border bg-white opacity-50 w-9 h-12 aspect-square">></button>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 flex center-xy z-20">
+            <button type="button" class="rounded-md border bg-white opacity-50 w-9 h-12 aspect-square"><</button>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-3 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/250547/msi-gamin-gf65-thin-10ue-i5-10500h-16gb-512gb-6gb-600x600.jpg" alt="">
+              </div>
+              <span class="text-xs block mb-2">MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</span>
+              
+              <strong class="text-red-600 gap-2 mb-2">29.490.000₫</strong>
+             
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                Quà 100.000đ
+              </nav>
+              
+              <nav class="absolute top-0 bottom-0 right-0 left-0">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/campaign/Frame-knockout-desktop-226x500.png" alt="">
+              </nav>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-3 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/250547/msi-gamin-gf65-thin-10ue-i5-10500h-16gb-512gb-6gb-600x600.jpg" alt="">
+              </div>
+              <span class="text-xs block mb-2">MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</span>
+              
+              <strong class="text-red-600 gap-2 mb-2">29.490.000₫</strong>
+             
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                Quà 100.000đ
+              </nav>
+              
+              <nav class="absolute top-0 bottom-0 right-0 left-0">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/campaign/Frame-knockout-desktop-226x500.png" alt="">
+              </nav>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-3 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/250547/msi-gamin-gf65-thin-10ue-i5-10500h-16gb-512gb-6gb-600x600.jpg" alt="">
+              </div>
+              <span class="text-xs block mb-2">MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</span>
+              
+              <strong class="text-red-600 gap-2 mb-2">29.490.000₫</strong>
+             
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                Quà 100.000đ
+              </nav>
+              
+              <nav class="absolute top-0 bottom-0 right-0 left-0">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/campaign/Frame-knockout-desktop-226x500.png" alt="">
+              </nav>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-3 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/250547/msi-gamin-gf65-thin-10ue-i5-10500h-16gb-512gb-6gb-600x600.jpg" alt="">
+              </div>
+              <span class="text-xs block mb-2">MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</span>
+              
+              <strong class="text-red-600 gap-2 mb-2">29.490.000₫</strong>
+             
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                Quà 100.000đ
+              </nav>
+              
+              <nav class="absolute top-0 bottom-0 right-0 left-0">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/campaign/Frame-knockout-desktop-226x500.png" alt="">
+              </nav>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-3 pb-2">
+              <div class="flex items-center" style="height: 220px; line-height: 220px;">
+                <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/44/250547/msi-gamin-gf65-thin-10ue-i5-10500h-16gb-512gb-6gb-600x600.jpg" alt="">
+              </div>
+              <span class="text-xs block mb-2">MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</span>
+              
+              <strong class="text-red-600 gap-2 mb-2">29.490.000₫</strong>
+             
+              <nav class="flex items-center gap-1 text-xs mb-10">
+                Quà 100.000đ
+              </nav>
+              
+              <nav class="absolute top-0 bottom-0 right-0 left-0">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/campaign/Frame-knockout-desktop-226x500.png" alt="">
+              </nav>
+            </a>
+          </div>
+
+        </div>
+
+        <div>
+          <a href="#" class="border rounded-md bg-white mx-auto p-1 flex center-xy max-w-[300px] -translate-y-5">
+            <span>Xem thêm Laptop Gaming ></span>
+          </a>
+        </div>
+        </section>
+
+      <!-- xiaomi week -->
+        <section class="container mx-auto max-w-[70%] bg-[#f49e0b] border-none rounded-xl mb-7">
+
+        <div class="block overflow-hidden text-white font-bold letter-spacing text-[45px] tracking-[2px] leading-10 px-0 py-[26px] text-center">TUẦN LỄ XIAOMI</div>
+
+        <div class="grid grid-cols-3 gap-3 px-5 relative">
+          <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/Banner-1desk-380x200-7.png" alt="">
+          <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/Banner-1desk-380x200-7.png" alt="">
+          <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/Banner-1desk-380x200-7.png" alt="">
+        
+          <div class="absolute top-1/2 -translate-y-1/2 right-0 flex center-xy">
+            <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square">></button>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 flex center-xy">
+            <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square"><</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-5 gap-2 p-[20px] mb-[20px] relative">
+          
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303298/xiaomi-redmi-note-12-4g-mono-den-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">Xiaomi Redmi Note 12 8GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                5.390.000₫
+                <small class="rounded-lg bg-red-200 p-1">-6%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 5.066.600₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303298/xiaomi-redmi-note-12-4g-mono-den-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">Xiaomi Redmi Note 12 8GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                5.390.000₫
+                <small class="rounded-lg bg-red-200 p-1">-6%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 5.066.600₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303298/xiaomi-redmi-note-12-4g-mono-den-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">Xiaomi Redmi Note 12 8GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                5.390.000₫
+                <small class="rounded-lg bg-red-200 p-1">-6%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 5.066.600₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303298/xiaomi-redmi-note-12-4g-mono-den-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">Xiaomi Redmi Note 12 8GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                5.390.000₫
+                <small class="rounded-lg bg-red-200 p-1">-6%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 5.066.600₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303298/xiaomi-redmi-note-12-4g-mono-den-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">Xiaomi Redmi Note 12 8GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                5.390.000₫
+                <small class="rounded-lg bg-red-200 p-1">-6%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 5.066.600₫</div>
+            </nav>
+          </a>
+
+          <div class="absolute top-1/2 -translate-y-1/2 right-0 flex center-xy z-20">
+            <button type="button" class="rounded-ml border bg-white opacity-50 w-9 h-12 aspect-square">></button>
+          </div>
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 flex center-xy z-20">
+            <button type="button" class="rounded-md border bg-white opacity-50 w-9 h-12 aspect-square"><</button>
+          </div>
+        </div>
+
+        <div>
+          <a href="#" class="border rounded-md bg-white mx-auto p-1 flex center-xy max-w-[300px] -translate-y-5">
+            <span>Xem tất cả sản phẩm ></span>
+          </a>
+        </div>
+        </section>
+
+      <!-- shopping trending -->
+        <section class="container mx-auto max-w-[70%] bg-gradient-to-r from-[#ffecd2] to-[#fcb69f] border-none rounded-xl mb-7">
+        <strong class="block overflow-hidden px-[22px] py-[15px] text-[22px] leading-9 text-[#333] uppercase">Xu hướng mua sắm</strong>
+      
+        <div class="grid grid-cols-4 gap-2 px-[22px] pb-[30px]">
+          <a href="#" class="relative">
+            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/Des-280x235.png" alt="">
+            <span class="absolute left-4 top-[65%]">Điện thoại</span>
+            <strong class="absolute text-blue-600 left-4 top-[80%]">Galaxy A14 | A34</strong>
+          </a>
+
+          <a href="#" class="relative">
+            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/Des-280x235.png" alt="">
+            <span class="absolute left-4 top-[65%]">Điện thoại</span>
+            <strong class="absolute text-blue-600 left-4 top-[80%]">Galaxy A14 | A34</strong>
+          </a>
+
+          <a href="#" class="relative">
+            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/Des-280x235.png" alt="">
+            <span class="absolute left-4 top-[65%]">Điện thoại</span>
+            <strong class="absolute text-blue-600 left-4 top-[80%]">Galaxy A14 | A34</strong>
+          </a>
+
+          <a href="#" class="relative">
+            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/Des-280x235.png" alt="">
+            <span class="absolute left-4 top-[65%]">Điện thoại</span>
+            <strong class="absolute text-blue-600 left-4 top-[80%]">Galaxy A14 | A34</strong>
+          </a>
+        </div>
+        </section>
+
+      <!-- featured category -->
+        <section class="container mx-auto max-w-[70%] bg-white border-none rounded-xl mb-7">
+        <strong class="block overflow-hidden px-[22px] py-[15px] text-[22px] leading-9 text-[#333] uppercase">Danh mục nổi bật</strong>
+
+        <div class="grid grid-cols-10 gap-2 px-[40px] pb-[30px]">
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Laptop-129x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Laptop</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Tablet-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Tablet</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Donghothongminh-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Đồng hồ thông minh</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/dien-thoai-doc-quyen-128x128.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Điện thoại độc quyền</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Donghothoitrang-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Đồng hồ thời trang</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-may-cu-60x60.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Máy cũ giá rẻ</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Oplung-128x128.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Ốp lưng</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/chuot-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Chuột máy tính</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/ban-phim-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Bàn phím</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Simthecao-129x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Sim, thẻ</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Loa-128x128.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Loa</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Tainghe-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Tai nghe</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Sacduphong-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Sạc dự phòng</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Capsac-129x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Cáp sạc</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Maytinhbo-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Máy tính bộ</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Mayin-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Máy in</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Manhinhmaytinh-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Màn hình máy tính</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Phukiengaming-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Phụ kiện gaming</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-camera-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Camera, webcam</span>
+          </a>
+
+          <a href="#" class="inline-block">
+            <div class="flex center-xy h-[60px] px-4">
+              <img width="55" height="55" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/may-chieu-icon-128x129.png" alt="">
+            </div>
+            <span class="block text-center text-[14px]">Thiết bị nhà thông minh</span>
+          </a>
+        </div>
+        </section>
+
+        <div class="container mx-auto max-w-[70%] border-none rounded-xl">
+         <strong class="block overflow-hidden pb-[15px] text-[22px] leading-9 text-[#333] uppercase">Khuyến mãi chỉ có trên Online</strong>
+        </div>
+
+       <section class="container mx-auto max-w-[70%] bg-white border-none rounded-xl mb-7">
+        <img class="rounded-lg" src="https://cdn.tgdd.vn/2023/06/banner/1200x150-tgdd-1200x150-1.png" alt="">
+        </section>
+
+      <!-- convenient service -->
+       <section class="container mx-auto max-w-[70%] bg-white border-none rounded-xl mb-7">
+        <strong class="block overflow-hidden px-[22px] py-[15px] text-[22px] leading-9 text-[#333] uppercase">Dịch vụ tiện ích</strong>
+    
+        <div class="grid grid-cols-4 gap-2 px-[22px] pb-[30px]">
+          <div class="flex gap-2 bg-[#dceeff] border overflow-hidden py-[14px] px-[10px] rounded-xl">
+            <div class="block rounded-[50%]" id="logo-phone"></div>
+            <div>
+              <a href="#" class="">
+                <small class="block overflow-hidden pt-[6px] pb-[12px]">Mua Mã thẻ cào</small>
+                <small><strong class="text-red-600">Giảm 2%</strong> cho mệnh giá <br> từ 100.000 trở lên</small>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 bg-[#fef5cf] border overflow-hidden py-[14px] px-[10px] rounded-xl">
+            <div class="block rounded-[50%]" id="logo-lightning"></div>
+            <div>
+              <a href="#" class="">
+                <small class="block overflow-hidden pt-[6px] pb-[12px]">Dịch Vụ Đóng Tiền</small>
+                <small>Điện, Nước, Internet, <br> Cước điện thoại trả sau</small>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 bg-[#ffdfdb] border overflow-hidden py-[14px] px-[10px] rounded-xl">
+            <div class="block rounded-[50%]" id="logo-gaming"></div>
+            <div>
+              <a href="#" class="">
+                <small class="block overflow-hidden pt-[6px] pb-[12px]">Mua thẻ game</small>
+                <small><strong class="text-red-600">Giảm 2%</strong> cho tất cả nhà <br> mạng, áp dụng cho mã <br> mệnh giá từ 300.000</small>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-2 bg-[#e1fecf] border overflow-hidden py-[14px] px-[10px] rounded-xl">
+            <div class="block rounded-[50%]" id="logo-office"></div>
+            <div>
+              <a href="#">
+                <small class="block overflow-hidden pt-[6px] pb-[12px]">Office bản quyền</small>
+                <small>Mua Microsoft office giá<br> chỉ từ 990k</small>
+              </a>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- suggestion today -->
+       <section class="container mx-auto max-w-[70%] bg-tgdd border-none rounded-xl mb-7 p-1">
+        <strong class="block overflow-hidden pb-[10px] text-[22px] leading-9 text-[#333] uppercase">Gợi ý hôm nay</strong>
+        
+        <div class="grid grid-cols-4 gap-2 overflow-hidden pb-[15px]">
+          <a href="#" class="flex center-xy gap-2 h-[70px] px-[8px] bg-[#feb70b] rounded-xl">
+            <img class="inline-block w-[50px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/goiy-1.png" alt="">
+            <span class="overflow-hidden text-[18px] leading-[22px] pt-2">Cho bạn</span>
+          </a>
+
+          <a href="#" class="flex center-xy gap-2 h-[70px] px-[8px] bg-[#feb70b] rounded-xl">
+            <img class="inline-block w-[50px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/campaign/icon-laptop-gaming-desk-50x50-50x50-50x50-1.png" alt="">
+            <span class="overflow-hidden text-[18px] leading-[22px] pt-2">Laptop Gaming</span>
+          </a>
+
+          <a href="#" class="flex center-xy gap-2 h-[70px] px-[8px] bg-[#feb70b] rounded-xl">
+            <img class="inline-block w-[50px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/01/campaign/pk-50-50x50-50x50-2.webp" alt="">
+            <span class="overflow-hidden text-[18px] leading-[22px] pt-2">Phụ kiện giảm sốc</span>
+          </a>
+
+          <a href="#" class="flex center-xy gap-2 h-[70px] px-[8px] bg-[#feb70b] rounded-xl">
+            <img class="inline-block w-[50px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/campaign/desk11-50x50-1-50x50-1-50x50.png" alt="">
+            <span class="overflow-hidden text-[18px] leading-[22px] pt-2">Tablet giá rẻ</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-5 gap-[15px]">
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+
+          <a href="#" class="translateY-hover inline-block bg-white rounded-md overflow-hidden px-2 pb-2">
+            <div class="flex items-center" style="height: 220px; line-height: 220px;">
+              <img width="207" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-den-thumb-600x600.jpg" alt="">
+            </div>
+            <nav class="flex border rounded-xl bg-pink-600 text-[8px] max-w-max px-1 gap-1 mb-2">
+              <img width="12" height="12" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/content/icon-50x50-6.png" alt="">
+              <span class="text-white">GIÁ RẺ QUÁ</span>
+            </nav>
+            <span class="text-xs block mb-2">iPhone 14 Pro Max 128GB</span>
+            <div class="mb-2">
+              <strong class="text-red-600 gap-2">
+                27.490.000₫
+                <small class="rounded-lg bg-red-200 p-1">-8%</small>
+              </strong>
+            </div>
+            <nav class="flex items-center gap-1 text-xs mb-10">
+              <img width="12" height="12" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAADIWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTQgNzkuMTUxNDgxLCAyMDEzLzAzLzEzLTEyOjA5OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQwRDA1QTlFQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQwRDA1QTlGQzc2NTExRUI5RUFEQUQ5QzM0RTRFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDBEMDVBOUNDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDBEMDVBOURDNzY1MTFFQjlFQURBRDlDMzRFNEVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6rTY90AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFRQTFRFR3BM0QAczwIc0AId0AEc0AEc0AEczwEc0AEc0AEb0AEbzwAgzwAQ0AEc0QIczwEa0QEc0QIe0AId1gAh0QEb0QIdzwAg0AIbzwAbzwUb0gAd0AIcLM/rQgAAABt0Uk5TAH+A31+/QCDv388QEK9/UG9vnx+PjzCfMDBPXpRnnQAAASVJREFUKM+Nk8uWgzAMQ0VJiAOkPPqcuf//n7OABGhZTFb4WPKRZSHtXxdCp/PXTSkCWHLhu3kxwOKCeHwAmhr8eJOkp/NQD/vuBXyzlaGFy6FbHadVu/4A7lOLg3VcqDduXW/8upck3WkLCcqn5ypJwchrPA3qLLHBekkOnwUbbcRCoY+SUtF15SW9lpmSJpIk473WM05y3PMw4kHNRBuk3z7XRi8Ri+8RbN7sjtz2bYWXkdctbSvsQQot42ZCv2IkSY9F2pxdwCSlAr8yS3NZzJEkTXtb6nZvi5PUGcXHCPYuay/Aa6EfTtKu/nRxO32MW0RiyLc5jcNwFp2zeFXQ7rLb+I/wDRG8+5GkMHmIzXFaeBhAjAZY1X/9J8GlBZHGXv98fzV0E9m7ufBbAAAAAElFTkSuQmCC" alt="">
+              <div>Giá rẻ quá: 26.490.000₫</div>
+            </nav>
+          </a>
+        </div>
+        </section>
+        
+        <div class="py-[16px]">
+          <a href="#" class="border rounded-md bg-white mx-auto p-1 flex center-xy max-w-[300px] -translate-y-5">
+            <span>Xem thêm ></span>
+          </a>
+        </div>
+        
+        <!-- 24h technology -->
+        <div class="container mx-auto max-w-[70%] bg-tgdd border-none rounded-xl mb-7">
+          <div class="flex gap-[15px]">
+            <div class="flex-1 bg-white rounded-xl p-">
+              <div class="flex justify-between items-center">
+                <strong class="flex-1 block overflow-hidden px-[22px] py-[15px] text-[22px] leading-9 text-[#333] uppercase max-w-full">24H CÔNG NGHỆ</strong>
+                <a href="#" class="float-right font-medium text-[#555] text-[16px] uppercase">Xem tấts cả ></a>
+              </div>
+              <div class="grid grid-cols-3 gap-2 py-[18px] px-[15px]">
+                <a href="#">
+                  <img class="rounded-md" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Files/2023/05/04/1528556/thumtainghe-040523-182620-200x200.jpg" alt="">
+                  <small>
+                    Giá RẺ Quá: Phụ kiện giảm đến 50%++, tai nghe, loa, sạc có đủ
+                  </small>
+                </a>
+
+                <a href="#">
+                  <img class="rounded-md" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Files/2023/05/04/1528556/thumtainghe-040523-182620-200x200.jpg" alt="">
+                  <small>
+                    Giá RẺ Quá: Phụ kiện giảm đến 50%++, tai nghe, loa, sạc có đủ
+                  </small>
+                </a>
+
+                <a href="#">
+                  <img class="rounded-md" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Files/2023/05/04/1528556/thumtainghe-040523-182620-200x200.jpg" alt="">
+                  <small>
+                    Giá RẺ Quá: Phụ kiện giảm đến 50%++, tai nghe, loa, sạc có đủ
+                  </small>
+                </a>
+              </div>
+            </div>
+            
+            <a href="#">
+              <img style="height: 276.41px;" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2022/12/banner/HCCTGDDnew1-285x350.webp" alt="">
+            </a>
+          </div>
+        </div>
+
+          <div class="container mx-auto max-w-[70%] border-none rounded-xl">
+           <strong class="block overflow-hidden pb-[15px] text-[22px] leading-9 text-[#333] uppercase">Chuyên trang thương hiệu</strong>
+          </div>
+
+          <section class="container mx-auto max-w-[70%] border-none rounded-xl mb-7 grid grid-cols-3 gap-3 relative">
+            
+              <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/samsung-390-210-390x210.png" alt="">
+              <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/chuyentrang-APPLEDT-390x210.png" alt="">
+              <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/chuyen-trang-lenovo-390x210.png" alt="">
+            
+              <div class="absolute top-1/2 -translate-y-1/2 translate-x-1/2 right-0 flex center-xy">
+                <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square">></button>
+              </div>
+              <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 flex center-xy">
+                <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square"><</button>
+              </div>
+          </section>
+
+          <!-- New big deal -->
+          <div class="container mx-auto max-w-[70%] border-none rounded-xl">
+            <strong class="block overflow-hidden pb-[15px] text-[22px] leading-9 text-[#333] uppercase">Chuỗi mới deal khủng </strong>
+           </div>
+ 
+           <section class="container mx-auto max-w-[70%] border-none rounded-xl mb-7 grid grid-cols-3 gap-3 relative">
+             
+               <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/760x400-760x400-1.jpeg" alt="">
+               <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/760-400-760x400-1.png" alt="">
+               <img class="rounded-2xl" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/760x400-760x400-7.jpg" alt="">
+             
+               <div class="absolute top-1/2 -translate-y-1/2 translate-x-1/2 right-0 flex center-xy">
+                 <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square">></button>
+               </div>
+               <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 flex center-xy">
+                 <button type="button" class="rounded-[50%] border bg-white opacity-50 w-9 h-9 aspect-square"><</button>
+               </div>
+           </section>
+
+           <div class="container mx-auto max-w-[70%] border-none rounded-xl">
+            <strong class="block overflow-hidden pb-[15px] text-[22px] leading-9 text-[#333] uppercase">Tìm kiếm nhiều</strong>
+           </div> 
+
+           <div class="container mx-auto max-w-[70%] border-none rounded-[35%] mb-7 gap-2 flex flex-wrap leading-1">
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">laptop</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">macbook air</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">Samsung galaxy A24</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">điện thoại</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">máy tính bảng</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">đồng hồ thông minh</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">bàn phím máy tính</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">chuột</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">loa</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">màn hình máy tính</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">quạt mini</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">tv box</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">đồng hồ bulova</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">surface laptop</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">loa jbl</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">loa microlab</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">loa sony</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">sạc dự phòng anker</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">apple tv</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">balo laptop</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">chuột gaming</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">giá đỡ laptop</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">pin aa</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">hp envy</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">lenovo legion</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">asus rog</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">rop</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">lg gram</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">macbook pro 14</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">samsung tabs</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">đồng hồ michael kors</a>
+            <a href="#" class="text-[12px] border bg-slate-200 px-2 rounded-lg whitespace-nowrap">iphone 15</a>
+          </div>
+
+          <section class="container mx-auto max-w-[70%] bg-[#008847] border-none mb-2">
+            <div class="flex py-[10px] pl-[35px] pr-3 gap-2">
+              <a href="#">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/logoBHX.png" alt="">
+              </a>
+              <span class="text-[#dff500]">
+                FREESHIP
+                <small>cho đơn hàng từ 300.000đ</small>
+              </span>
+              <span class="flex-1 flex items-center text-[10px] text-white">(Đây là khuyến mãi của website cùng tập đoàn MWG)</span>
+              <div>
+                <a href="#" class="text-[10px] text-white text-center flex-wrap flex">
+                  xem thêm 10.000+ <br> sản phẩm khuyến mãi
+                  <img width="30" height="30" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/ArrowCircleRight.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-6 gap-2 pr-3 pl-[10px] pb-[10px]">
+              <div class="px-[10px] py-1 bg-white rounded-lg relative">
+                <span class="text-[#008847] text-xs whitespace-nowrap mb-2">Tặng thêm mã giảm 10%</span>
+                <input class="border border-green-700 max-w-full p-1 rounded-sm text-xs mb-2" type="text" placeholder="Nhập email*">
+                <input class="border border-green-700 max-w-full p-1 rounded-sm text-xs mb-2" type="text" placeholder="Nhập SĐT*">
+                <button class="bg-[#008847] min-w-full text-xs rounded-sm p-1 text-white" type="button">Nhận mã</button>
+                <div class="absolute text-[#afafaf] text-[10px] lead-[14px] left-[10px] right-[10px] bottom-[5px]">*Áp dụng cho khách lần đầu mua hàng tại BachhoaXANH</div>
+              </div>
+              <div class="rounded-sm overflow-hidden">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/1120-x-1761-280x440-1.png" alt="">
+              </div>
+              <div class="rounded-sm overflow-hidden">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/169764-280x440.jpg" alt="">
+              </div>
+              <div class="rounded-sm overflow-hidden">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/BOX-TRUYE%CC%82%CC%80N-THO%CC%82NG-280x440-TGDDxBHX-280x440-2.jpg" alt="">
+              </div>
+              <div class="rounded-sm overflow-hidden">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/BOX-TRUYE%CC%82%CC%80N-THO%CC%82NG-280x440-TGDDxBHX--1--280x440.jpg" alt="">
+              </div>
+              <div class="rounded-sm overflow-hidden">
+                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/BOX-TRUYE%CC%82%CC%80N-THO%CC%82NG-280x440-TGDDxBHX--1--280x440.jpg" alt="">
+              </div>
+            </div>
+          </section>
+      </footer>
+    </main>
+
+    <div class="bg-white mt-3">
+      <section class="container mx-auto max-w-[70%] border-none flex">
+        <div class="grid grid-cols-3 gap-2 text-xs" style="flex: 2;">
+          <div class="change-color-blue">
+            <a class="block mb-[10px]" href="#">Tích điểm quà tặng vip</a>
+            <a class="block mb-[10px]" href="#">Lịch sử mua hàng</a>
+            <a class="block mb-[10px]" href="#">Tìm hiểu về mua trả góp</a>
+            <a class="block mb-[10px]" href="#">Chính sách bảo hành</a>
+            <a class="block mb-[10px]" href="#">Chính sách đổi trả</a>
+            <a class="block mb-[10px]" href="#">Giao hàng & Thanh toán</a>
+            <a class="block mb-[10px]" href="#">Hướng dẫn mua online</a>
+            <a class="block mb-[10px]" href="#">Bán hàng doanh nghiệp</a>
+            <a class="block mb-[10px]" href="#">Phiếu mua hàng</a>
+            <a class="block mb-[10px]" href="#">In hóa đơn điện tử</a>
+            <a class="block mb-[10px]" href="#">Quy chế hoạt động</a>
+            <a class="block mb-[10px]" href="#">Nội quy cửa hàng</a>
+            <a class="block mb-[10px]" href="#">Chất lượng phục vụ</a>
+            <a class="block mb-[10px]" href="#">Cảnh báo giả mạo</a>
+            <a class="block mb-[10px]" href="#">Chính sách khui hộp sản phẩm Apple</a>
+          </div>
+          <div class="change-color-blue">
+            <a class="block mb-[10px]" href="#">Giới thiệu công ty (MWG.vn)</a>
+            <a class="block mb-[10px]" href="#">Tuyển dụng</a>
+            <a class="block mb-[10px]" href="#">Gửi góp ý, khiếu nại</a>
+            <a class="block mb-[10px]" href="#">Tìm siêu thị (3.381 shop)</a>
+            <a class="block mb-[10px]" href="#">Xem bản mobile</a>
+          </div>
+          <div>
+            <a href="#" class="block mb-[10px]">Tổng đài hỗ trợ (Miễn phí)</a>
+            <a href="#" class="block mb-[10px]">Gọi mua: <trong class="text-blue-600">1800.1060</trong> (7:30-22:00)</a>
+            <a href="#" class="block mb-[10px]">Khiếu nại: <trong class="text-blue-600">1800.1062</trong> (8:00-21:30)</a>
+            <a href="#" class="block mb-[10px]">Bảo hành: <trong class="text-blue-600">1800.1064</trong> (8:00-21:30)</a>
+          </div>
+        </div>
+        <div class="text-xs" style="flex: 1;">
+          <div class="grid grid-cols-3 gap-2 mb-3">
+            <a href="#" class="flex center-xy gap-1">
+              <img width="18" height="18" src="images/facebook.svg" alt="">
+              <strong>3809.1k Fan</strong>
+            </a>
+            <a href="#" class="flex center-xy gap-1">
+              <img width="18" height="18" src="images/youtube.svg" alt="">
+              <strong>857k Đăng ký</strong>
+            </a>
+            <a href="#" class="flex center-xy gap-1">
+              <img width="18" height="18" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/icon_zalo.png" alt="">
+              <strong>Zalo TGDĐ</strong>
+            </a>
+          </div>
+          <div class="mb-3"></div>
+          <div class="mb-3">Websites cùng tập đoàn</div>
+          <div class="grid grid-cols-4 gap-2">
+            <a href="#" id="logo-topzone"></a>
+            <a href="#" id="logo-dmx"></a>
+            <a href="#" id="logo-bhx"></a>
+            <a href="#" id="logo-ankhang"></a>
+            <a href="#" id="logo-avasport"></a>
+            <a href="#" id="logo-tantam"></a>
+            <a href="#" id="logo-farm"></a>
+            <a href="#" id="logo-vieclam"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="bg-[#f1f1f1] py-[15px]">
+      <section class="container mx-auto max-w-[70%] border-none flex">
+        <p class="text-[10px]">
+          © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.<br>
+          Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a class="text-blue-700" href="#">Xem chính sách sử dụng</a>
+        </p>
+      </section>
+    </div>
   </body>
 </html>
+ 
